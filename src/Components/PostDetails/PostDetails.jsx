@@ -54,7 +54,7 @@ export default function PostDetails() {
 
   return (
     <>
-      <div className="flex justify-center dm:mx-auto mx-4">
+      <div className="flex justify-center sm:mx-auto mx-4">
         <div className="card bg-base-200 lg:w-3xl md:w-2xl sm:w-md shadow-sm my-6">
           <div className="card-body">
             <div className="flex items-center">
