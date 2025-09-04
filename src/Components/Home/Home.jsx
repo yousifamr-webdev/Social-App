@@ -41,9 +41,9 @@ export default function Home() {
   if (isLoading) {
     return (
       <>
-        <div className="flex lg:w-3xl md:w-2xl w-md flex-col gap-4  items-center justify-center align-middle mx-auto">
-          <div className="flex items-center gap-4 lg:w-3xl md:w-2xl w-md">
-            <div className="skeleton size-16 shrink-0 rounded-full"></div>
+        <div className="flex lg:w-3xl md:w-2xl sm:w-md flex-col gap-4  items-center justify-center align-middle sm:mx-auto mx-4">
+          <div className="flex items-center gap-4 lg:w-3xl md:w-2xl sm:w-md w-full ">
+            <div className="skeleton  size-16 shrink-0 rounded-full"></div>
             <div className="flex flex-col gap-4">
               <div className="skeleton h-4 w-28"></div>
               <div className="skeleton h-4 w-20"></div>
@@ -62,7 +62,7 @@ export default function Home() {
       <CreatePost />
 
       {data?.map((post) => (
-        <div className="flex justify-center mx-auto" key={post.id}>
+        <div className="flex justify-center sm:mx-auto mx-4" key={post.id}>
           <div className="card bg-base-200 lg:w-3xl md:w-2xl w-md shadow-sm my-6 relative">
             <Link to={`/postdetails/${post.id}`}>
               <div className="card-body">
@@ -88,7 +88,7 @@ export default function Home() {
               </figure>
             </Link>
             {post?.user._id === userId && (
-              <div className="dropdown dropdown-start absolute top-7 end-7">
+              <div className="dropdown dropdown-end absolute top-7 end-7">
                 <i
                   tabIndex={0}
                   role="button"

@@ -31,7 +31,7 @@ export default function Profile() {
 
   return (
     <>
-      <div className="card lg:card-side bg-base-100 shadow-sm mx-auto lg:w-3xl md:w-2xl w-md my-4">
+      <div className="card lg:card-side bg-base-100 shadow-sm sm:mx-auto mx-4 lg:w-3xl md:w-2xl sm:w-md my-4">
         <figure className="lg:h-56">
           <img src={data?.photo} alt={data?.name + "profile photo"} />
         </figure>

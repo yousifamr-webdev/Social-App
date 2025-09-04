@@ -28,7 +28,7 @@ export default function Comment({ comment }) {
               </span>
             </div>
             {commentCreator?._id === userId && (
-              <div className="dropdown dropdown-start ">
+              <div className="dropdown dropdown-end ">
                 <i
                   tabIndex={0}
                   role="button"

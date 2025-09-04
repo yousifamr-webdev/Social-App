@@ -38,8 +38,8 @@ export default function PostDetails() {
   if (isLoading) {
     return (
       <>
-        <div className="flex lg:w-3xl md:w-2xl w-md flex-col gap-4  items-center justify-center align-middle mx-auto">
-          <div className="flex items-center gap-4 lg:w-3xl md:w-2xl w-md">
+        <div className="flex lg:w-3xl md:w-2xl sm:w-md flex-col gap-4  items-center justify-center align-middle sm:mx-auto mx-4">
+          <div className="flex items-center gap-4 lg:w-3xl md:w-2xl sm:w-md w-full ">
             <div className="skeleton  size-16 shrink-0 rounded-full"></div>
             <div className="flex flex-col gap-4">
               <div className="skeleton h-4 w-28"></div>
@@ -54,8 +54,8 @@ export default function PostDetails() {
 
   return (
     <>
-      <div className="flex justify-center mx-auto">
-        <div className="card bg-base-200 lg:w-3xl md:w-2xl w-md shadow-sm my-6">
+      <div className="flex justify-center dm:mx-auto mx-4">
+        <div className="card bg-base-200 lg:w-3xl md:w-2xl sm:w-md shadow-sm my-6">
           <div className="card-body">
             <div className="flex items-center">
               <div className="avatar">
@@ -72,7 +72,7 @@ export default function PostDetails() {
                   </span>
                 </div>
                 {data?.user._id === userId && (
-                  <div className="dropdown dropdown-start">
+                  <div className="dropdown dropdown-end">
                     <i
                       tabIndex={0}
                       role="button"

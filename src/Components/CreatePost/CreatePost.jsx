@@ -47,7 +47,7 @@ export default function CreatePost() {
   return (
     <>
       <form onSubmit={handleSubmit(handleAddPost)}>
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box lg:w-3xl md:w-2xl w-md border p-4 mx-auto">
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box lg:w-3xl md:w-2xl sm:w-md border p-4 sm:mx-auto mx-4">
           <div className="flex justify-between items-center">
             <legend className="fieldset-legend text-xl">Add Post</legend>
           </div>

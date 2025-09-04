@@ -46,9 +46,9 @@ export default function UserPosts({ id }) {
   if (isLoading) {
     return (
       <>
-        <div className="flex lg:w-3xl md:w-2xl w-md flex-col gap-4  items-center justify-center align-middle mx-auto my-5">
-          <div className="flex items-center gap-4 lg:w-3xl md:w-2xl w-md">
-            <div className="skeleton size-16 shrink-0 rounded-full"></div>
+        <div className="flex lg:w-3xl md:w-2xl sm:w-md flex-col gap-4  items-center justify-center align-middle sm:mx-auto mx-4 my-6">
+          <div className="flex items-center gap-4 lg:w-3xl md:w-2xl sm:w-md w-full ">
+            <div className="skeleton  size-16 shrink-0 rounded-full"></div>
             <div className="flex flex-col gap-4">
               <div className="skeleton h-4 w-28"></div>
               <div className="skeleton h-4 w-20"></div>
@@ -94,7 +94,7 @@ export default function UserPosts({ id }) {
             </Link>
             {post?.user._id === userId && (
               <div
-                className="dropdown dropdown-start absolute top-7 end-7"
+                className="dropdown dropdown-end absolute top-7 end-7"
                 onClick={(e) => e.stopPropagation()}
               >
                 <i
