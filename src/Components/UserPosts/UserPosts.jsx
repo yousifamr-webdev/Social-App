@@ -64,8 +64,8 @@ export default function UserPosts({ id }) {
   return (
     <>
       {data?.map((post) => (
-        <div className="flex justify-center mx-auto my-6" key={post?.id}>
-          <div className="card bg-base-200 lg:w-3xl md:w-2xl w-md shadow-sm my-6 relative">
+        <div className="flex justify-center sm:mx-auto mx-4 my-6" key={post?.id}>
+          <div className="card bg-base-200 lg:w-3xl md:w-2xl sm:w-md shadow-sm my-6 relative">
             <Link to={`/postdetails/${post?.id}`}>
               <div className="card-body">
                 <div className="flex items-center">
